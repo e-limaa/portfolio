@@ -26,4 +26,11 @@ var projetos = {
     // FOTO MODAL
     imgProjeto: "../imgs/projetos/sagris.jpg",
   },
+
+  projeto05: {
+    // NOME CRIANÇA
+    nomeProjeto: "Site - Costa & Nascimento",
+    // FOTO MODAL
+    imgProjeto: "../imgs/projetos/costa-nascimento.jpg",
+  },
 }

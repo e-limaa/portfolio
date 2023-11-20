@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-eduardo-lima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e scss -x \"npm run compile-sass\"",
+    "compile-sass": "node-sass scss-page/styles-home.scss css/styles-home.css --output-style compressed && node-sass scss-page/styles-about.scss css/styles-about.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "18": "^0.0.0"
+  }
+}

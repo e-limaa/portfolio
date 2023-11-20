@@ -1,0 +1,218 @@
+section.section-02 {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: $white;
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .box-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 8px;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 96px;
+
+      .project {
+        position: relative;
+        height: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        &:hover {
+          .project-title {
+            opacity: 1;
+          }
+
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        .project-title {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 700;
+          color: $white;
+
+          opacity: 0;
+          transition: opacity 0.3s;
+          z-index: 10;
+          bottom: 24px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.63) 61.98%,
+            rgba(0, 0, 0, 0.9) 100%
+          );
+          border-radius: 11px;
+          opacity: 0;
+          transition: opacity 0.3s;
+          z-index: 5;
+        }
+
+        img {
+          height: 300px;
+          border-radius: 13px;
+        }
+      }
+    }
+  }
+}
+
+.modal-projeto {
+  padding: 0px 16px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999999;
+  overflow: hidden;
+
+  .modal-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1170px;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 56px 0 rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 0 56px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 56px 0 rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      max-width: 328px;
+      height: 340px;
+      padding: 32px 16px;
+    }
+
+    .header-modal {
+      padding: 40px 0 16px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content-modal {
+      overflow-y: scroll;
+      width: 100%;
+      height: 100vh;
+
+      /* width */
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: none;
+        margin-top: 92px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+          180deg,
+          rgba(89, 110, 163, 0) 0%,
+          #596ea3 28.65%,
+          #596ea3 76.04%,
+          rgba(89, 110, 163, 0) 100%
+        );
+        border-radius: 10px;
+        margin-left: 2px;
+        -webkit-transition: background 1s;
+        transition: background 1s;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        border-radius: 32px;
+        background: linear-gradient(
+          180deg,
+          rgba(138, 171, 255, 0) 0%,
+          #8aabff 28.65%,
+          #8aabff 76.04%,
+          rgba(138, 171, 255, 0) 100%
+        );
+      }
+
+      .modal-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        padding: 40px 0 104px 0;
+        background: linear-gradient(180deg, #000 15.92%, rgba(0, 0, 0, 0.00) 100%);
+
+        p {
+          color: #fff;
+          font-weight: 800;
+          font-size: 32px;
+          line-height: 36px;
+        }
+
+        .fechar {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          margin-right: 8px;
+          border-radius: 60px;
+          background: rgba(255, 255, 255, 0.15);
+          padding: 4px 4px 4px 12px;
+          gap: 8px;
+          transition: all 0.2s;
+
+          p {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            color: $white;
+          }
+        }
+
+        .fechar:hover {
+          background: rgba(255, 255, 255, 0.25);
+        }
+      }
+
+      #img-projeto {
+        width: 100%;
+        border-radius: 16px;
+        margin-top: 92px;
+      }
+    }
+  }
+}

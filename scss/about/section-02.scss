@@ -1,0 +1,119 @@
+section.section-02 {
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .box-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 100%;
+      margin-bottom: 96px;
+
+      #content-experience {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      #content-education {
+        display: none;
+      }
+
+      .company {
+        display: flex;
+        gap: 24px;
+
+        h1 {
+          margin-top: 12px;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 700;
+          color: $white;
+        }
+
+        img {
+          height: 48px;
+        }
+
+        .content-company {
+          .position {
+            font-size: 16px;
+            line-height: 20px;
+            color: #9ad8fa;
+            margin-top: 8px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        ul {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+
+      .tabs {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+
+        .tab {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          width: 100%;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $white;
+
+          .line {
+            width: 100%;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.15);
+          }
+        }
+
+        .tab:hover {
+          cursor: pointer;
+
+          .line {
+            width: 100%;
+            height: 3px;
+            background: $linear-pink-blue;
+            border-radius: 100px;
+          }
+        }
+
+        .tab-selected {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          width: 100%;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $white;
+
+          .line {
+            width: 100%;
+            height: 3px;
+            background: $linear-pink-blue;
+            border-radius: 100px;
+          }
+        }
+      }
+    }
+  }
+}

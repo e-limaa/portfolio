@@ -1,0 +1,134 @@
+section.section-01 {
+  width: 100%;
+  padding: 80px 16px 0px 16px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 40px;
+
+  // Left imgs
+
+  .photoshop {
+    position: absolute;
+    top: 76px;
+    left: 226px;
+  }
+
+  .dev {
+    position: absolute;
+    top: 267px;
+    left: 128px;
+  }
+
+  .figma {
+    position: absolute;
+    top: 446px;
+    left: 139px;
+  }
+
+  .illustrator {
+    position: absolute;
+    top: 776px;
+    left: 200px;
+  }
+
+  .html {
+    position: absolute;
+    top: 1040px;
+    left: 91px;
+  }
+
+  //Right imgs
+
+  .figma-right {
+    position: absolute;
+    top: 120px;
+    right: 120px;
+  }
+
+  .photoshop-right {
+    position: absolute;
+    top: 424px;
+    right: 177px;
+  }
+
+  .html-right {
+    position: absolute;
+    top: 757px;
+    right: 122px;
+  }
+
+  .illustrator-right {
+    position: absolute;
+    top: 1026px;
+    right: 220px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .box-flex {
+      margin-top: 56px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      width: 100%;
+
+      .person {
+        width: 148px;
+        margin-bottom: 16px;
+      }
+
+      .name-text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .main-content {
+          padding: 12px 16px;
+          flex-direction: column;
+          //padding: 16px 16px;
+          color: $white;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28px;
+          background-image: url(../imgs/cursor-rectangle-name.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 218px;
+          height: 63px;
+
+          .name {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 32px;
+            background: -webkit-linear-gradient(
+              114deg,
+              #fb5f9e 0%,
+              #4f7ddc 50.52%,
+              #a6e6ff 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        .description {
+          margin-right: 48px;
+          color: $white;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .light-bg {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+  }
+}

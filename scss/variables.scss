@@ -1,0 +1,34 @@
+$linear-pink-blue: linear-gradient(
+  91deg,
+  #ff8cba -7.51%,
+  #74a1ff 49.34%,
+  #c0edff 105.02%
+);
+$linear-pink-blue-hover: linear-gradient(
+  91deg,
+  #ff8cba -7.51%,
+  #ff4690 -7.5%,
+  #2d71ff 49.34%,
+  #62d3ff 105.02%
+);
+$linear-blue-black: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(22, 171, 255, 0.1) 100%
+  ),
+  rgba(0, 0, 0, 0.2);
+$background-image-desk: url("../imgs/bg.jpg");
+$white: #fff;
+$light-blue: #8aabff;
+$blue: #1162ff;
+$water-blue: #0dd1eb;
+$purple: #8f32d7;
+$dark-purple: #32087b;
+$neutral-80: #1d1a2b;
+$neutral-90: #0f0d1c;
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}

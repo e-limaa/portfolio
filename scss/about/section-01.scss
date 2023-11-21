@@ -11,30 +11,35 @@ section.section-01 {
     position: absolute;
     top: 76px;
     left: 226px;
+    z-index: -1;
   }
 
   .dev {
     position: absolute;
     top: 267px;
     left: 128px;
+    z-index: -1;
   }
 
   .figma {
     position: absolute;
     top: 446px;
     left: 139px;
+    z-index: -1;
   }
 
   .illustrator {
     position: absolute;
     top: 776px;
     left: 200px;
+    z-index: -1;
   }
 
   .html {
     position: absolute;
     top: 1040px;
     left: 91px;
+    z-index: -1;
   }
 
   //Right imgs
@@ -43,24 +48,28 @@ section.section-01 {
     position: absolute;
     top: 120px;
     right: 120px;
+    z-index: -1;
   }
 
   .photoshop-right {
     position: absolute;
     top: 424px;
     right: 177px;
+    z-index: -1;
   }
 
   .html-right {
     position: absolute;
     top: 757px;
     right: 122px;
+    z-index: -1;
   }
 
   .illustrator-right {
     position: absolute;
     top: 1026px;
     right: 220px;
+    z-index: -1;
   }
 
   .container {

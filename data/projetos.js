@@ -24,7 +24,6 @@ var projetos = {
     // NOME CRIANÇA
     nomeProjeto: "Site e Implantação - SAGRIS",
     // FOTO MODAL
-    imgProjeto: "../imgs/projetos/sagris.jpg",
   },
 
   projeto05: {
@@ -32,5 +31,12 @@ var projetos = {
     nomeProjeto: "Site - Costa & Nascimento",
     // FOTO MODAL
     imgProjeto: "../imgs/projetos/costa-nascimento.jpg",
+  },
+
+  projeto06: {
+    // NOME CRIANÇA
+    nomeProjeto: "Site - Marc",
+    // FOTO MODAL
+    imgProjeto: "../imgs/projetos/marc.jpg",
   },
 }

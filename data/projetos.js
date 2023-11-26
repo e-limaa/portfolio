@@ -10,7 +10,7 @@ var projetos = {
     // NOME CRIANÇA
     nomeProjeto: "Aplicativo - TipTap",
     // FOTO MODAL
-    imgProjeto: "../imgs/projetos/tip-tap.jpg",
+    imgProjeto: "../portfolio/imgs/projetos/tip-tap.jpg",
   },
 
   projeto03: {

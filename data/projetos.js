@@ -3,7 +3,7 @@ var projetos = {
     // NOME CRIANÇA
     nomeProjeto: "Aplicativo - Show Xpress",
     // FOTO MODAL
-    imgProjeto: "../imgs/projetos/app-showXpress.jpg",
+    imgProjeto: "../portfolio/imgs/projetos/app-showXpress.jpg",
   },
 
   projeto02: {
@@ -17,7 +17,7 @@ var projetos = {
     // NOME CRIANÇA
     nomeProjeto: "Aplicativo - Península",
     // FOTO MODAL
-    imgProjeto: "../imgs/projetos/peninsula.jpg",
+    imgProjeto: "../portfolio/imgs/projetos/peninsula.jpg",
   },
 
   projeto04: {
@@ -30,13 +30,13 @@ var projetos = {
     // NOME CRIANÇA
     nomeProjeto: "Site - Costa & Nascimento",
     // FOTO MODAL
-    imgProjeto: "../imgs/projetos/costa-nascimento.jpg",
+    imgProjeto: "../portfolio/imgs/projetos/costa-nascimento.jpg",
   },
 
   projeto06: {
     // NOME CRIANÇA
     nomeProjeto: "Site - Marc",
     // FOTO MODAL
-    imgProjeto: "../imgs/projetos/marc.jpg",
+    imgProjeto: "../portfolio/imgs/projetos/marc.jpg",
   },
 }

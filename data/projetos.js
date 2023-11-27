@@ -1,42 +1,42 @@
 var projetos = {
   projeto01: {
-    // NOME CRIANÇA
+    // NOME PROJETO
     nomeProjeto: "Aplicativo - Show Xpress",
-    // FOTO MODAL
+    // FOTO PROJETO
     imgProjeto: "../portfolio/imgs/projetos/app-showXpress.jpg",
   },
 
   projeto02: {
-    // NOME CRIANÇA
+    // NOME PROJETO
     nomeProjeto: "Aplicativo - TipTap",
-    // FOTO MODAL
+    // FOTO PROJETO
     imgProjeto: "../portfolio/imgs/projetos/tip-tap.jpg",
   },
 
   projeto03: {
-    // NOME CRIANÇA
+    // NOME PROJETO
     nomeProjeto: "Aplicativo - Península",
-    // FOTO MODAL
+    // FOTO PROJETO
     imgProjeto: "../portfolio/imgs/projetos/peninsula.jpg",
   },
 
   projeto04: {
-    // NOME CRIANÇA
+    // NOME PROJETO
     nomeProjeto: "Site e Implantação - SAGRIS",
-    // FOTO MODAL
+    // FOTO PROJETO
   },
 
   projeto05: {
-    // NOME CRIANÇA
+    // NOME PROJETO
     nomeProjeto: "Site - Costa & Nascimento",
-    // FOTO MODAL
+    // FOTO PROJETO
     imgProjeto: "../portfolio/imgs/projetos/costa-nascimento.jpg",
   },
 
   projeto06: {
-    // NOME CRIANÇA
+    // NOME PROJETO
     nomeProjeto: "Site - Marc",
-    // FOTO MODAL
+    // FOTO PROJETO
     imgProjeto: "../portfolio/imgs/projetos/marc.jpg",
   },
 }

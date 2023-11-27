@@ -1,8 +1,11 @@
 section.section-02 {
+  padding: 0px 16px 0px 16px;
+
   .container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 
     h2 {
       display: flex;
@@ -13,6 +16,11 @@ section.section-02 {
       line-height: 36px;
       font-weight: 700;
       margin-bottom: 24px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
 
     .box-flex {
@@ -23,11 +31,19 @@ section.section-02 {
       width: 100%;
       margin-bottom: 96px;
 
+      @media screen and (max-width: 600px) {
+        margin-bottom: 32px;
+      }
+
       .project {
         position: relative;
-        height: 300px;
+        max-width: 400px;
+        height: 279px;
         border-radius: 12px;
         overflow: hidden;
+
+        @media screen and (max-width: 600px) {
+        }
 
         &:hover {
           .project-title {
@@ -74,8 +90,12 @@ section.section-02 {
         }
 
         img {
-          height: 300px;
+          width: 100%;
+          height: auto;
           border-radius: 13px;
+
+          @media screen and (max-width: 600px) {
+          }
         }
       }
     }
@@ -174,7 +194,7 @@ section.section-02 {
         align-items: center;
         position: absolute;
         padding: 40px 0 104px 0;
-        background: linear-gradient(180deg, #000 15.92%, rgba(0, 0, 0, 0.00) 100%);
+        background: linear-gradient(180deg, #000 15.92%, rgba(0, 0, 0, 0) 100%);
 
         p {
           color: #fff;

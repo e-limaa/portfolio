@@ -1,13 +1,21 @@
 * {
-    font-family: 'Baloo 2';
-    padding: 0;
-    border: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Baloo 2";
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: $background-image-desk;
-    background-size: cover;
-    background-position: center center;
+  background-image: $background-image-desk;
+  background-size: cover;
+  background-position: center top;
+}
+
+// MOBILE
+@media screen and (max-width: 600px) {
+  // Seus estilos para dispositivos móveis aqui
+  body {
+    background-image: $background-image-mobile;
+  }
 }

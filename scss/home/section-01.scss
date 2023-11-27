@@ -5,34 +5,81 @@ section.section-01 {
   box-sizing: border-box;
   position: relative;
 
+  @media screen and (max-width: 600px) {
+    height: 864px;
+  }
+
   .perspective {
+    width: 100%;
     position: absolute;
     top: 134px;
+    left: 0;
     z-index: -1;
+    overflow: hidden;
+
+    @media screen and (max-width: 600px) {
+      top: 530px;
+      height: auto;
+      width: 100%;
+    }
+
+    img {
+      width: 1884px;
+      height: auto;
+      object-fit: cover;
+
+      @media screen and (max-width: 600px) {
+        width: 880px;
+      }
+    }
   }
 
   .photoshop {
     position: absolute;
     top: 76px;
     left: 226px;
+    z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      left: 248px;
+      top: 45px;
+      width: 42px;
+    }
   }
 
   .dev {
     position: absolute;
     top: 267px;
     left: 128px;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .figma {
     position: absolute;
     top: 446px;
     left: 139px;
+    z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      top: 100px;
+      width: 55px;
+      left: 292px;
+    }
   }
 
   .illustrator {
     position: absolute;
     top: 776px;
     left: 200px;
+
+    @media screen and (max-width: 600px) {
+      top: 188px;
+      left: 333px;
+      width: 42px;
+    }
   }
 
   .html {
@@ -46,6 +93,11 @@ section.section-01 {
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    width: 100%;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
 
     .box-flex {
       display: flex;
@@ -55,9 +107,19 @@ section.section-01 {
       width: 408px;
       margin-bottom: 48px;
 
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 0px;
+      }
+
       .person {
         width: 102px;
         margin-bottom: 16px;
+
+        @media screen and (max-width: 600px) {
+          width: 58px;
+          margin-bottom: 4px;
+        }
       }
 
       .main-content {
@@ -71,6 +133,13 @@ section.section-01 {
         background-repeat: no-repeat;
         height: 155px;
 
+        @media screen and (max-width: 600px) {
+          font-size: 16px;
+          width: 240px;
+          padding: 8px 8px;
+          height: 86px;
+        }
+
         .name {
           font-size: 56px;
           font-weight: 800;
@@ -83,6 +152,11 @@ section.section-01 {
           );
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+
+          @media screen and (max-width: 600px) {
+            font-size: 32px;
+            line-height: 36px;
+          }
         }
       }
 
@@ -91,11 +165,20 @@ section.section-01 {
         flex-direction: column;
         gap: 32px;
 
+        @media screen and (max-width: 600px) {
+          gap: 16px;
+        }
+
         h2 {
           color: $white;
           font-size: 28px;
           font-weight: 500;
           line-height: 32px;
+
+          @media screen and (max-width: 600px) {
+            font-size: 16px;
+            line-height: 20px;
+          }
         }
         .cta {
           max-width: 200px;
@@ -123,6 +206,20 @@ section.section-01 {
       right: 0px;
       top: 0px;
       z-index: -1;
+
+      @media screen and (max-width: 600px) {
+        top: 424px;
+        width: 100%;
+      }
+    }
+
+    .character {
+      margin-top: 40px;
+
+      @media screen and (max-width: 600px) {
+        width: 80%;
+        margin-top: 16px;
+      }
     }
   }
 }

@@ -12,6 +12,11 @@ section.section-02 {
       width: 100%;
       margin-bottom: 96px;
 
+      @media screen and (max-width: 600px) {
+        gap: 24px;
+        margin-bottom: 48px;
+      }
+
       .tabs {
         display: flex;
         gap: 16px;
@@ -70,15 +75,28 @@ section.section-02 {
         display: flex;
         flex-direction: column;
         gap: 24px;
+
+        @media screen and (max-width: 600px) {
+          gap: 16px;
+        }
       }
 
       #content-education {
         display: none;
+
+        @media screen and (max-width: 600px) {
+          flex-direction: column;
+          gap: 32px;
+        }
       }
 
       .company {
         display: flex;
         gap: 24px;
+
+        @media screen and (max-width: 600px) {
+          gap: 16px;
+        }
 
         h1 {
           margin-top: 12px;
@@ -90,6 +108,10 @@ section.section-02 {
 
         img {
           height: 48px;
+
+          @media screen and (max-width: 600px) {
+            height: 40px;
+          }
         }
 
         .content-company {
@@ -122,12 +144,20 @@ section.section-02 {
         gap: 32px;
         width: 100%;
 
+        @media screen and (max-width: 600px) {
+          gap: 16px;
+        }
+
         h1 {
           margin-top: 12px;
           font-size: 20px;
           line-height: 24px;
           font-weight: 700;
           color: $white;
+
+          @media screen and (max-width: 600px) {
+            margin-top: 0;
+          }
         }
 
         img {
@@ -164,12 +194,20 @@ section.section-02 {
         gap: 32px;
         width: 100%;
 
+        @media screen and (max-width: 600px) {
+          gap: 24px;
+        }
+
         h1 {
           margin-top: 12px;
           font-size: 20px;
           line-height: 24px;
           font-weight: 700;
           color: $white;
+
+          @media screen and (max-width: 600px) {
+            margin-top: 0;
+          }
         }
 
         img {
@@ -190,6 +228,10 @@ section.section-02 {
             background: rgba(255, 255, 255, 0.15);
             border-radius: 24px;
             margin-top: 8px;
+
+            @media screen and (max-width: 600px) {
+              width: 100%;
+            }
 
             div {
               width: 100%;

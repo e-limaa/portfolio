@@ -5,6 +5,11 @@ section.section-01 {
   position: relative;
   margin-bottom: 40px;
 
+  @media screen and (max-width: 600px) {
+    margin-bottom: 32px;
+    padding: 100px 16px 0px 16px;
+  }
+
   // Left imgs
 
   .photoshop {
@@ -12,6 +17,10 @@ section.section-01 {
     top: 76px;
     left: 226px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .dev {
@@ -19,6 +28,10 @@ section.section-01 {
     top: 267px;
     left: 128px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .figma {
@@ -26,6 +39,10 @@ section.section-01 {
     top: 446px;
     left: 139px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .illustrator {
@@ -33,6 +50,10 @@ section.section-01 {
     top: 776px;
     left: 200px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .html {
@@ -40,6 +61,10 @@ section.section-01 {
     top: 1040px;
     left: 91px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   //Right imgs
@@ -49,6 +74,10 @@ section.section-01 {
     top: 120px;
     right: 120px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .photoshop-right {
@@ -56,6 +85,10 @@ section.section-01 {
     top: 424px;
     right: 177px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .html-right {
@@ -63,6 +96,10 @@ section.section-01 {
     top: 757px;
     right: 122px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .illustrator-right {
@@ -70,6 +107,10 @@ section.section-01 {
     top: 1026px;
     right: 220px;
     z-index: -1;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .container {
@@ -84,17 +125,28 @@ section.section-01 {
       align-items: center;
       width: 100%;
 
+      @media screen and (max-width: 600px) {
+        gap: 16px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 0;
+      }
+
       .person {
         width: 148px;
         margin-bottom: 16px;
+
+        @media screen and (max-width: 600px) {
+          width: 72px;
+          margin-bottom: 0px;
+        }
       }
 
-      .name-text {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+      .main-content-mobile {
+        display: none;
 
-        .main-content {
+        @media screen and (max-width: 600px) {
+          display: flex;
           padding: 12px 16px;
           flex-direction: column;
           //padding: 16px 16px;
@@ -122,6 +174,45 @@ section.section-01 {
             -webkit-text-fill-color: transparent;
           }
         }
+      }
+
+      .name-text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .main-content {
+          padding: 12px 16px;
+          flex-direction: column;
+          //padding: 16px 16px;
+          color: $white;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28px;
+          background-image: url(../imgs/cursor-rectangle-name.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 218px;
+          height: 63px;
+
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
+
+          .name {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 32px;
+            background: -webkit-linear-gradient(
+              114deg,
+              #fb5f9e 0%,
+              #4f7ddc 50.52%,
+              #a6e6ff 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
 
         .description {
           margin-right: 48px;
@@ -129,6 +220,10 @@ section.section-01 {
           font-size: 16px;
           line-height: 20px;
           font-weight: 400;
+
+          @media screen and (max-width: 600px) {
+            margin-right: 0px;
+          }
         }
       }
     }

@@ -1,156 +1,154 @@
 html {
-    scroll-padding-top: 80px;
+  scroll-padding-top: 80px;
 }
 
 header#header {
-    background:$linear-blue-black;
-    backdrop-filter: blur(8px);
-    position: fixed;
-    width: 100%;
-    padding: 0px 16px;
-    box-sizing: border-box;
-    z-index: 999;
+  background: $linear-blue-black;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  padding: 0px 16px;
+  box-sizing: border-box;
+  z-index: 999;
 
-    .container {
-        .box-flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 80px;
+  .container {
+    .box-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
 
-            @media (max-width: 767px) {
-                height: 60px;
-            }
+      @media (max-width: 767px) {
+        height: 60px;
+      }
 
-            .logo {
-                display: block;
-                width: 192px;
-                text-decoration: none;
+      .logo {
+        display: block;
+        width: 192px;
+        text-decoration: none;
 
-                @media (max-width: 767px) {
-                    width: 140px;
-                }
-
-                img {
-                    display: block;
-
-                    @media (max-width: 767px) {
-                        width: 140px;
-                    }
-                }
-            }
-
-            nav {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                height: 100%;
-                padding: 24px 0 24px 0px;
-                max-width: 296px;
-
-                @media (max-width: 767px) {
-                    display: none;
-                }
-
-                .menus {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding-right: 24px;
-                    border-right: solid 1px;
-                    border-color: $light-blue;
-        
-                    .link {
-                        color: $white;
-                        text-decoration: none;
-                        position: relative;
-        
-                        &:hover {
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                width: 100%;
-                                height: 3px;
-                                background: $linear-pink-blue-hover;
-                                bottom: -5px;
-                                left: 0;
-                                border-radius: 100px;
-                            }
-                        }
-                    }   
-        
-                    
-                }
-
-                .social {
-                    align-content: center;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding-left: 24px;
-                    height: 100%;
-                    
-                    .linkedin {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-linkedin.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover { 
-                            background-image: url(../svg/icon-linkedin-hover.svg);
-                        }
-                    }
-        
-                    .instagram {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-instagram.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover { 
-                            background-image: url(../svg/icon-instagram-hover.svg);
-        
-                        }
-        
-                    }
-                    .behance {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-behance.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover {
-                            background-image: url(../svg/icon-behance-hover.svg);
-                        }
-        
-                    }
-                    .github {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-github.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover {
-                            background-image: url(../svg/icon-github-hover.svg);
-                        }
-                    } 
-                }
-            }
+        @media (max-width: 767px) {
+          width: 140px;
         }
+
+        img {
+          display: block;
+
+          @media (max-width: 767px) {
+            width: 140px;
+          }
+        }
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 24px 0 24px 0px;
+        max-width: 296px;
+
+        @media (max-width: 767px) {
+          display: none;
+        }
+
+        .menus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-right: 24px;
+          border-right: solid 1px;
+          border-color: $light-blue;
+
+          .link {
+            color: $white;
+            text-decoration: none;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 3px;
+              background: $linear-pink-blue-hover;
+              bottom: -5px;
+              left: 0;
+              border-radius: 100px;
+              transition: 0.2s ease-in-out;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+
+        .social {
+          align-content: center;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-left: 24px;
+          height: 100%;
+
+          .linkedin {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-linkedin.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-linkedin-hover.svg);
+            }
+          }
+
+          .instagram {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-instagram.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-instagram-hover.svg);
+            }
+          }
+          .behance {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-behance.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-behance-hover.svg);
+            }
+          }
+          .github {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-github.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-github-hover.svg);
+            }
+          }
+        }
+      }
     }
+  }
 }

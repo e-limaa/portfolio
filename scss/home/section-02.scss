@@ -1,6 +1,10 @@
 section.section-02 {
   padding: 0px 16px 0px 16px;
 
+  animation: appear-project 2s ease-in-out;
+  //animation-timeline: view();
+  //animation-range: cover 5% cover 30%;
+
   .container {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,10 @@ section.section-02 {
         height: 279px;
         border-radius: 12px;
         overflow: hidden;
+
+        animation: appear-project 2s backwards;
+        animation-timeline: view();
+        animation-range: cover 0% cover 40%;
 
         @media screen and (max-width: 600px) {
         }
@@ -234,5 +242,17 @@ section.section-02 {
         margin-top: 92px;
       }
     }
+  }
+}
+
+@keyframes appear-project {
+  from {
+    opacity: 0;
+    transform: perspective(1200px) translateX(0px) translateY(40px) scale(1);
+  }
+
+  to {
+    opacity: 1;
+    transform: perspective(1200px) translateX(0px) translateY(0px) scale(1);
   }
 }

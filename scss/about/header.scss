@@ -1,172 +1,336 @@
 html {
-    scroll-padding-top: 80px;
+  scroll-padding-top: 80px;
 }
 
 header#header {
-    background:$linear-blue-black;
-    backdrop-filter: blur(8px);
-    position: fixed;
-    width: 100%;
-    padding: 0px 16px;
-    box-sizing: border-box;
-    z-index: 999;
+  background: $linear-blue-black;
+  backdrop-filter: blur(12px);
+  position: fixed;
+  width: 100%;
+  padding: 0px 16px;
+  box-sizing: border-box;
+  z-index: 999;
 
-    .container {
-        .box-flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 80px;
+  .container {
+    height: 100%;
 
-            @media (max-width: 767px) {
-                height: 60px;
-            }
+    .box-flex {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
 
-            .logo {
-                display: block;
-                width: 192px;
-                text-decoration: none;
+      .group-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
 
-                @media (max-width: 767px) {
-                    width: 140px;
-                }
+        .logo {
+          display: block;
+          width: 192px;
+          text-decoration: none;
 
-                img {
-                    display: block;
-
-                    @media (max-width: 767px) {
-                        width: 140px;
-                    }
-                }
-            }
-
-            nav {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                height: 100%;
-                padding: 24px 0 24px 0px;
-                max-width: 296px;
-
-                @media (max-width: 767px) {
-                    display: none;
-                }
-
-                .menus {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding-right: 24px;
-                    border-right: solid 1px;
-                    border-color: $light-blue;
-        
-                    .link-about {
-                        color: $white;
-                        text-decoration: none;
-                        position: relative;
-        
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 3px;
-                            background: $linear-pink-blue-hover;
-                            bottom: -5px;
-                            left: 0;
-                            border-radius: 100px;
-                        }
-                    
-                    }   
-                    
-                    .link-portfolio {
-                        color: $white;
-                        text-decoration: none;
-                        position: relative;
-        
-                        &:hover {
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                width: 100%;
-                                height: 3px;
-                                background: $linear-pink-blue-hover;
-                                bottom: -5px;
-                                left: 0;
-                                border-radius: 100px;
-                            }
-                        }
-                    }   
-                }
-
-                .social {
-                    align-content: center;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding-left: 24px;
-                    height: 100%;
-                    
-                    .linkedin {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-linkedin.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover { 
-                            background-image: url(../svg/icon-linkedin-hover.svg);
-                        }
-                    }
-        
-                    .instagram {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-instagram.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover { 
-                            background-image: url(../svg/icon-instagram-hover.svg);
-        
-                        }
-        
-                    }
-                    .behance {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-behance.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover {
-                            background-image: url(../svg/icon-behance-hover.svg);
-                        }
-        
-                    }
-                    .github {
-                        width: 24px;
-                        height: 24px;
-                        background-image: url(../svg/icon-github.svg);
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        transition: background-image 0.2s ease-in-out;
-        
-                        &:hover {
-                            background-image: url(../svg/icon-github-hover.svg);
-                        }
-                    } 
-                }
-            }
+          img {
+            display: block;
+          }
         }
+
+        #btn-menu {
+          display: none;
+
+          @media screen and (max-width: 1024px) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            width: 24px;
+            height: 24px;
+            background: transparent;
+            cursor: pointer;
+          }
+
+          .linha-curta {
+            display: block;
+            margin: 2px 0;
+            border-radius: 16px;
+            height: 3px;
+            width: 16px;
+            background-color: $white;
+            position: relative;
+            transform-origin: center;
+            transition: 0.3s;
+          }
+
+          .linha {
+            display: block;
+            margin: 2px 0;
+            border-radius: 16px;
+            height: 3px;
+            width: 22px;
+            background-color: $white;
+            position: relative;
+          }
+
+          &.ativar .linha-curta:nth-child(1) {
+            width: 100%;
+            transform: translateY(4px) rotate(-45deg);
+          }
+
+          &.ativar .linha-curta:nth-last-child(1) {
+            width: 100%;
+            transform: translateY(-3px) rotate(45deg);
+          }
+
+          &.ativar .linha {
+            display: none;
+          }
+        }
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 24px 0 24px 0px;
+        max-width: 296px;
+
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+
+        .menus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-right: 24px;
+          border-right: solid 1px;
+          border-color: $light-blue;
+
+          .link {
+            color: $white;
+            text-decoration: none;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 3px;
+              background: $linear-pink-blue-hover;
+              bottom: -5px;
+              left: 0;
+              border-radius: 100px;
+              transition: 0.2s ease-in-out;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+
+        .social {
+          align-content: center;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-left: 24px;
+          height: 100%;
+
+          .linkedin {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-linkedin.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-linkedin-hover.svg);
+            }
+          }
+
+          .instagram {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-instagram.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-instagram-hover.svg);
+            }
+          }
+          .behance {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-behance.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-behance-hover.svg);
+            }
+          }
+          .github {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-github.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+
+            &:hover {
+              background-image: url(../svg/icon-github-hover.svg);
+            }
+          }
+        }
+      }
     }
+
+    .box-flex-mobile {
+      display: none;
+    }
+    // ESTILOS MOBILE ---------------------------------------------------
+    .box-flex-mobile {
+      display: none;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 0 16px 0;
+      height: 100vh;
+      flex-direction: column;
+      align-items: start;
+
+      &.abrir {
+        display: flex;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 0 0 100px 0px;
+        flex-direction: column;
+        align-items: start;
+        //opacity: 0;
+
+        .menus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          flex-direction: column;
+          align-items: start;
+          border-top: solid 1px $light-blue;
+          padding-top: 40px;
+          gap: 24px;
+
+          .link {
+            color: $white;
+            text-decoration: none;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 3px;
+              background: $linear-pink-blue-hover;
+              bottom: -5px;
+              left: 0;
+              border-radius: 100px;
+              transition: 0.2s ease-in-out;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+
+        .social {
+          align-content: center;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          height: 56px;
+          background: $linear-pink-blue;
+          padding: 16px 32px;
+          border-radius: 12px;
+
+          .linkedin {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-linkedin.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+            filter: invert(1);
+
+            &:hover {
+              background-image: url(../svg/icon-linkedin-hover.svg);
+            }
+          }
+
+          .instagram {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-instagram.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+            filter: invert(1);
+
+            &:hover {
+              background-image: url(../svg/icon-instagram-hover.svg);
+            }
+          }
+          .behance {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-behance.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+            filter: invert(1);
+
+            &:hover {
+              background-image: url(../svg/icon-behance-hover.svg);
+            }
+          }
+          .github {
+            width: 24px;
+            height: 24px;
+            background-image: url(../svg/icon-github.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.2s ease-in-out;
+            filter: invert(1);
+
+            &:hover {
+              background-image: url(../svg/icon-github-hover.svg);
+            }
+          }
+        }
+      }
+    }
+  }
 }

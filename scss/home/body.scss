@@ -16,6 +16,8 @@ body {
 @media screen and (max-width: 600px) {
   // Seus estilos para dispositivos móveis aqui
   body {
+    background-position: center top;
+    background-size: cover;
     background-image: $background-image-mobile;
   }
 }

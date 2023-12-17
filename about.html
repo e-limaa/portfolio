@@ -16,24 +16,79 @@
     <link rel="icon" href="imgs/fav-icon.png" type="image/x-icon">
 </head>
 <body class="body">
-    <header id="header"> 
-        <div class="container">
-            <div class="box-flex">
-                <a href="index.html" class="logo"><img src="svg/logo.svg" alt="Logo escrito Eduardo Lima"></a>
-                <nav>
-                    <div class="menus">
-                        <a href="" class="link-about">Sobre</a>
-                        <a href="index.html" class="link-portfolio">Portfólio</a>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/eduardo-lima-944510b5/" class="linkedin" target="_blank"></a>
-                        <a href="https://www.instagram.com/eduardo_limaj/" class="instagram" target="_blank"></a>
-                        <a href="https://www.behance.net/eduardolimaj" class="behance" target="_blank"></a>
-                        <a href="https://github.com/e-limaa" class="github" target="_blank"></a>
-                    </div>
-                </nav>
+    <header id="header">
+      <div class="container">
+        <div class="box-flex">
+          <div class="group-menu">
+            <a href="index.html" class="logo">
+              <img src="svg/logo.svg" alt="Logo escrito Eduardo Lima" />
+            </a>
+            <button onclick="animar()" id="btn-menu">
+              <span class="linha-curta"></span>
+              <span class="linha"></span>
+              <span class="linha-curta"></span>
+            </button>
+          </div>
+          <nav>
+            <div class="menus">
+              <a href="about.html" class="link">Sobre</a>
+              <a href="#portifolio" class="link">Portfólio</a>
             </div>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/eduardo-lima-944510b5/"
+                class="linkedin"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.instagram.com/eduardo_limaj/"
+                class="instagram"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.behance.net/eduardolimaj"
+                class="behance"
+                target="_blank"
+              ></a>
+              <a
+                href="https://github.com/e-limaa"
+                class="github"
+                target="_blank"
+              ></a>
+            </div>
+          </nav>
         </div>
+        <div class="box-flex-mobile" id="menu-mobile">
+          <nav>
+            <div class="menus">
+              <a href="about.html" class="link">Sobre</a>
+              <a href="#portifolio" class="link">Portfólio</a>
+            </div>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/eduardo-lima-944510b5/"
+                class="linkedin"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.instagram.com/eduardo_limaj/"
+                class="instagram"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.behance.net/eduardolimaj"
+                class="behance"
+                target="_blank"
+              ></a>
+              <a
+                href="https://github.com/e-limaa"
+                class="github"
+                target="_blank"
+              ></a>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <section class="section-01" id="inicio">
@@ -307,5 +362,6 @@
         </div>
     </footer>
     <script src="js/scripts-about.js"></script>
+    <script src="js/mobile-navbar.js"></script>
 </body>
 </html>

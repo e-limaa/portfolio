@@ -28,9 +28,46 @@
     <header id="header">
       <div class="container">
         <div class="box-flex">
-          <a href="" class="logo"
-            ><img src="svg/logo.svg" alt="Logo escrito Eduardo Lima"
-          /></a>
+          <div class="group-menu">
+            <a href="" class="logo">
+              <img src="svg/logo.svg" alt="Logo escrito Eduardo Lima" />
+            </a>
+            <button onclick="animar()" id="btn-menu">
+              <span class="linha-curta"></span>
+              <span class="linha"></span>
+              <span class="linha-curta"></span>
+            </button>
+          </div>
+          <nav>
+            <div class="menus">
+              <a href="about.html" class="link">Sobre</a>
+              <a href="#portifolio" class="link">Portfólio</a>
+            </div>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/eduardo-lima-944510b5/"
+                class="linkedin"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.instagram.com/eduardo_limaj/"
+                class="instagram"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.behance.net/eduardolimaj"
+                class="behance"
+                target="_blank"
+              ></a>
+              <a
+                href="https://github.com/e-limaa"
+                class="github"
+                target="_blank"
+              ></a>
+            </div>
+          </nav>
+        </div>
+        <div class="box-flex-mobile" id="menu-mobile">
           <nav>
             <div class="menus">
               <a href="about.html" class="link">Sobre</a>
@@ -100,11 +137,9 @@
           alt="Personagem 3D do Eduardo Lima vestindo uma blusa branca e uma calça cinza usando um tenis laranja."
           class="character"
         />
+
         <div class="perspective">
-          <img
-            src="imgs/perspective.png"
-            alt="Quadriculado perspectiva"
-          />
+          <img src="imgs/perspective.png" alt="Quadriculado perspectiva" />
         </div>
       </div>
     </section>
@@ -224,5 +259,6 @@
     <script src="data/projetos.js"></script>
     <script src="js/modal-abrir-fechar.js"></script>
     <script src="js/scripts-home.js"></script>
+    <script src="js/mobile-navbar.js"></script>
   </body>
 </html>

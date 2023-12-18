@@ -5,7 +5,7 @@ html {
 header#header {
   background: $linear-blue-black;
   -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(20px);
   position: fixed;
   width: 100%;
   padding: 0px 16px;
@@ -206,11 +206,10 @@ header#header {
     }
     // ESTILOS MOBILE ---------------------------------------------------
     .box-flex-mobile {
-      display: none;
       justify-content: space-between;
       width: 100%;
       margin: 0 0 16px 0;
-      height: 100vh;
+      height: calc(100vh - 70px);
       flex-direction: column;
       align-items: start;
 
@@ -240,6 +239,9 @@ header#header {
           gap: 24px;
 
           .link {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
             color: $white;
             text-decoration: none;
             position: relative;
@@ -262,72 +264,86 @@ header#header {
           }
         }
 
-        .social {
-          align-content: center;
+        .social-frase {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
+          flex-direction: column;
           width: 100%;
-          height: 56px;
-          background: $linear-pink-blue;
-          padding: 16px 32px;
-          border-radius: 12px;
+          gap: 24px;
 
-          .linkedin {
-            width: 24px;
-            height: 24px;
-            background-image: url(../svg/icon-linkedin.svg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: background-image 0.2s ease-in-out;
-            filter: invert(1);
-
-            &:hover {
-              background-image: url(../svg/icon-linkedin-hover.svg);
-            }
+          p {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            color: $white;
           }
 
-          .instagram {
-            width: 24px;
-            height: 24px;
-            background-image: url(../svg/icon-instagram.svg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: background-image 0.2s ease-in-out;
-            filter: invert(1);
+          .social {
+            align-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 56px;
+            background: $linear-pink-blue;
+            padding: 16px 48px;
+            border-radius: 12px;
 
-            &:hover {
-              background-image: url(../svg/icon-instagram-hover.svg);
+            .linkedin {
+              width: 24px;
+              height: 24px;
+              background-image: url(../svg/icon-linkedin.svg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transition: background-image 0.2s ease-in-out;
+              filter: invert(1);
+
+              &:hover {
+                background-image: url(../svg/icon-linkedin-hover.svg);
+              }
             }
-          }
-          .behance {
-            width: 24px;
-            height: 24px;
-            background-image: url(../svg/icon-behance.svg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: background-image 0.2s ease-in-out;
-            filter: invert(1);
 
-            &:hover {
-              background-image: url(../svg/icon-behance-hover.svg);
+            .instagram {
+              width: 24px;
+              height: 24px;
+              background-image: url(../svg/icon-instagram.svg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transition: background-image 0.2s ease-in-out;
+              filter: invert(1);
+
+              &:hover {
+                background-image: url(../svg/icon-instagram-hover.svg);
+              }
             }
-          }
-          .github {
-            width: 24px;
-            height: 24px;
-            background-image: url(../svg/icon-github.svg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: background-image 0.2s ease-in-out;
-            filter: invert(1);
+            .behance {
+              width: 24px;
+              height: 24px;
+              background-image: url(../svg/icon-behance.svg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transition: background-image 0.2s ease-in-out;
+              filter: invert(1);
 
-            &:hover {
-              background-image: url(../svg/icon-github-hover.svg);
+              &:hover {
+                background-image: url(../svg/icon-behance-hover.svg);
+              }
+            }
+            .github {
+              width: 24px;
+              height: 24px;
+              background-image: url(../svg/icon-github.svg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transition: background-image 0.2s ease-in-out;
+              filter: invert(1);
+
+              &:hover {
+                background-image: url(../svg/icon-github-hover.svg);
+              }
             }
           }
         }

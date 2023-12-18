@@ -4,6 +4,7 @@ html {
 
 header#header {
   background: $linear-blue-black;
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   position: fixed;
   width: 100%;
